@@ -1,7 +1,7 @@
 # Docker Compose File Support - VS Code Extension
 
-![VS Code Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/c.docker-compose-file-support)
-![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/v.docker-compose-file-support)
+![VS Code Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/KilianJPopp.docker-compose-file-support)
+![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/KilianJPopp.docker-compose-file-support)
 ![License](https://img.shields.io/github/license/Kilianjpo/docker-compose-file-support)
 
 Enhanced support for Docker Compose files in VS Code with syntax highlighting, formatting, and validation.
