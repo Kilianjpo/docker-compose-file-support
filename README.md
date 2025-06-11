@@ -87,7 +87,7 @@ Initial release with:
 
 ## Contributing
 Contributions are welcome! Please open issues or pull requests at:  
-https://github.com/your-username/docker-compose-support
+https://github.com/Kilianjpo/docker-compose-support
 
 ## License
-[BSD-3-Clause-Clear](LICENSE)
+[BSD-3-Clause-Clear](https://github.com/Kilianjpo/docker-compose-file-support/blob/master/LICENSE)

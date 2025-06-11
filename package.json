@@ -3,10 +3,15 @@
   "name": "docker-compose-file-support",
   "displayName": "Docker Compose File Support",
   "description": "Enhanced support for Docker Compose files including syntax highlighting, formatting, and organization",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kilianjpo/docker-compose-file-support"
+  },
   "engines": {
     "vscode": "^1.100.0"
   },
+  "license": "BSD-3-Clause-Clear",
   "categories": [
     "Other"
   ],
