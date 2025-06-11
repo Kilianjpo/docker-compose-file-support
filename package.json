@@ -1,0 +1,77 @@
+{
+  "publisher": "KilianJPopp",
+  "name": "docker-compose-file-support",
+  "displayName": "Docker Compose File Support",
+  "description": "Enhanced support for Docker Compose files including syntax highlighting, formatting, and organization",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:editor.action.formatDocument"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "dockercompose",
+        "aliases": [
+          "Docker Compose"
+        ],
+        "filenames": [
+          "docker-compose.yml",
+          "docker-compose.yaml"
+        ],
+        "filenamePatterns": [
+          "*.compose.yml",
+          "*.compose.yaml"
+        ],
+        "extensions": [
+          ".compose.yml",
+          ".compose.yaml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dockercompose",
+        "scopeName": "source.yaml.docker-compose",
+        "path": "./syntaxes/docker-compose.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[docker-compose]": {
+        "editor.defaultFormatter": "KilianJPopp.docker-compose-support"
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/lodash": "^4.17.17",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
+  }
+}

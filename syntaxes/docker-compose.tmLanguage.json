@@ -1,0 +1,23 @@
+{
+	"scopeName": "source.yaml.docker-compose",
+	"fileTypes": ["docker-compose.yml", "docker-compose.yaml"],
+	"name": "Docker Compose",
+	"patterns": [
+	  {
+		"include": "source.yaml"
+	  },
+	  {
+		"match": "^(version|services|volumes|networks|configs|secrets):",
+		"name": "entity.name.section.docker-compose"
+	  },
+	  {
+		"match": "\\b(build|image|ports|volumes|environment|depends_on|networks|deploy|labels)\\b",
+		"name": "support.type.property-name.docker-compose"
+	  },
+	  {
+		"match": "\\b(context|dockerfile|args)\\b",
+		"name": "support.type.property-name.build.docker-compose"
+	  }
+	],
+	"repository": {}
+  }
