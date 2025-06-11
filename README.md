@@ -90,4 +90,4 @@ Contributions are welcome! Please open issues or pull requests at:
 https://github.com/your-username/docker-compose-support
 
 ## License
-[MIT](LICENSE)
+[BSD-3-Clause-Clear](LICENSE)
